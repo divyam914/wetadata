@@ -1,18 +1,24 @@
 import React from 'react';
-import {render} from 'react-dom';
+import ReactDom from 'react-dom';
 import AwesomeComponent from './AwesomeComponent.jsx';
-import Header from './Header.jsx';
+//import Header from './Header.jsx';
+import NavBar from './navbar/navbar.jsx';
+import navbardata from './navbar/navbarData.js';
+
 class App extends React.Component {
   render () {
+    console.log("in app render")
     return (
       <div>
         <p> Hello React Project</p>
         <AwesomeComponent />
-        <Header />
+        <NavBar items={navbardata} />
       </div>
     );
   }
+
+
 }
 
-render(<App/>, document.getElementById('app'));
-render(<Header/>, document.getElementById());
+
+export default App;
