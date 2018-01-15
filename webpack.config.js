@@ -16,6 +16,10 @@ const config = {
         test : /\.jsx?/,
         include : APP_DIR,
         loader : 'babel-loader'
+      },
+      {
+        test:/\.(png|jpe?g|gif)$/,
+        loader: 'file-loader'
       }
     ]
   }
