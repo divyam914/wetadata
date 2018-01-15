@@ -1,34 +1,35 @@
 {
   "name": "wetadata",
   "version": "1.0.0",
-  "description": "",
+  "description": "aggghjh",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack -w"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/brandonW96/wetadata.git"
+    "url": "git+https://github.com/divyam914/wetadata.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/brandonW96/wetadata/issues"
+    "url": "https://github.com/divyam914/wetadata/issues"
   },
-  "homepage": "https://github.com/brandonW96/wetadata#readme",
+  "homepage": "https://github.com/divyam914/wetadata#readme",
   "dependencies": {
-    "axios": "^0.17.1",
-    "body-parser": "^1.18.2",
-    "chalk": "^2.3.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
     "express": "^4.16.2",
-    "mongodb": "^3.0.1",
-    "mongoose": "^4.13.9",
+    "react": "^16.2.0",
+    "react-bootstrap": "^0.32.0",
     "react-dom": "^16.2.0",
-    "reactjs": "^1.0.0"
+    "react-router-dom": "^4.2.2",
+    "webpack": "^3.10.0"
   },
   "devDependencies": {
-    "chai": "^4.1.2",
-    "eslint": "^4.15.0",
-    "mocha": "^4.1.0"
+    "file-loader": "^1.1.6"
   }
 }

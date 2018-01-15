@@ -5,7 +5,7 @@ mongoose.Promise = global.Promise;
 const companySchema = mongoose.Schema({ //definitely inccomplete, but we'll talk about this more
   name: String,
   type: String, //for now, this will be water for everybody
-  location: String, 
+  location: String,
 });
 
 mongoose.model('Company', placeSchema);
