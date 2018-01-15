@@ -10,7 +10,7 @@ class App extends React.Component {
     console.log("in app render")
     return (
       <div>
-        <p> Hello React Project</p>
+        <p> WetaData</p>
         <NavBar />
       </div>
     );
