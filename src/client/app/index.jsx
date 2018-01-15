@@ -3,7 +3,7 @@ import ReactDom from 'react-dom';
 import AwesomeComponent from './AwesomeComponent.jsx';
 //import Header from './Header.jsx';
 import NavBar from './navbar/navbar.jsx';
-import navbardata from './navbar/navbarData.js';
+//import navbardata from './navbar/navbarData.js';
 
 class App extends React.Component {
   render () {
@@ -11,8 +11,7 @@ class App extends React.Component {
     return (
       <div>
         <p> Hello React Project</p>
-        <AwesomeComponent />
-        <NavBar items={navbardata} />
+        <NavBar />
       </div>
     );
   }
