@@ -9,6 +9,9 @@ import Report from "../Report.jsx";
 import Education from "../Education.jsx";
 import Contact from "../Contact.jsx";
 import SignIn from "../SignIn.jsx";
+//import TopBar from "../topbar.jsx"
+import Donate from '../Donate.jsx'
+import GetInvolved from "../GetInvolved.jsx"
 import {
  BrowserRouter as Router,
  Route,
@@ -33,23 +36,35 @@ class NavBar extends React.Component{
     return(
       <Router>
        <div>
-         <ul>
-           <li><Link to="/">Home</Link></li>
-           <li><Link to="/about">About</Link></li>
-           <li><Link to="/report">Report</Link></li>
-           <li><Link to="/education">Education</Link></li>
-           <li><Link to="/contact">Contact</Link></li>
-           <li><Link to="/signin">Sign In</Link></li>
-         </ul>
 
-         <hr/>
+           <div>
+           <Link to="/donate"><input type="submit" value="Donate"/></Link>
 
-         <Route exact path="/" component={Home}/>
-         <Route path="/about" component={About}/>
-         <Route path="/report" component={Report}/>
-         <Route path="/education" component={Education}/>
-         <Route path="/contact" component={Contact}/>
-         <Route path="/signin" component={SignIn}/>
+            <Link to="/getinvolved"><input type="submit" value="Get Involved"/></Link>
+            </div>
+
+            <div>
+             <ul>
+               <li><Link to="/">Home</Link></li>
+               <li><Link to="/about">About</Link></li>
+               <li><Link to="/report">Report</Link></li>
+               <li><Link to="/education">Education</Link></li>
+               <li><Link to="/contact">Contact</Link></li>
+               <li><Link to="/signin">Sign In</Link></li>
+             </ul>
+
+             <hr/>
+
+             <Route exact path="/" component={Home}/>
+             <Route path="/about" component={About}/>
+             <Route path="/report" component={Report}/>
+             <Route path="/education" component={Education}/>
+             <Route path="/contact" component={Contact}/>
+             <Route path="/signin" component={SignIn}/>
+             <Route path="/donate" component={Donate}/>
+             <Route path="/getinvolved" component={GetInvolved}/>
+             </div>
+
        </div>
      </Router>
    )
