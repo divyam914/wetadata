@@ -2,14 +2,12 @@
 https://gist.github.com/Qt-dev/556e2e0558892c99bd81
 */
 import React from 'react';
-//mport NavBarItem from './navbarItem.jsx';
 import Home from "../Home.jsx";
 import About from "../About.jsx";
 import Report from "../Report.jsx";
 import Education from "../Education.jsx";
 import Contact from "../Contact.jsx";
 import SignIn from "../SignIn.jsx";
-//import TopBar from "../topbar.jsx"
 import Donate from '../Donate.jsx'
 import GetInvolved from "../GetInvolved.jsx"
 import {
@@ -33,6 +31,7 @@ class NavBar extends React.Component{
   }*/
 
   render(){
+    console.log("in navbar render")
     return(
       <Router>
        <div>

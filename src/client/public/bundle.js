@@ -2494,7 +2494,7 @@ var _index2 = _interopRequireDefault(_index);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-//console.log('hi')
+console.log('in index.js');
 //console.log(ReactDom)
 //console.log(document.getElementById('app'))
 _reactDom2.default.render(_react2.default.createElement(_index2.default, null), document.getElementById('app'));
@@ -19862,10 +19862,6 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                https://gist.github.com/Qt-dev/556e2e0558892c99bd81
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
 
-//mport NavBarItem from './navbarItem.jsx';
-
-//import TopBar from "../topbar.jsx"
-
 
 var NavBar = function (_React$Component) {
   _inherits(NavBar, _React$Component);
@@ -19893,6 +19889,7 @@ var NavBar = function (_React$Component) {
     }*/
 
     value: function render() {
+      console.log("in navbar render");
       return _react2.default.createElement(
         _reactRouterDom.BrowserRouter,
         null,
@@ -20023,6 +20020,8 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+console.log('in Home.jsx');
+
 var Home = function (_React$Component) {
   _inherits(Home, _React$Component);
 
@@ -20033,21 +20032,22 @@ var Home = function (_React$Component) {
   }
 
   _createClass(Home, [{
-    key: "render",
+    key: 'render',
     value: function render() {
+      console.log('in home render');
       return _react2.default.createElement(
-        "div",
+        'div',
         null,
         _react2.default.createElement(
-          "h1",
+          'h1',
           null,
-          "WetaData"
+          'WetaData'
         ),
-        _react2.default.createElement("img", { src: _Home_background2.default, alt: "World Map" }),
+        _react2.default.createElement('img', { src: _Home_background2.default, alt: 'World Map' }),
         _react2.default.createElement(
-          "p",
+          'p',
           null,
-          "paragraph description goes here"
+          'paragraph description goes here'
         )
       );
     }
