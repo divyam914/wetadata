@@ -36,8 +36,8 @@ class NavBar extends React.Component{
       <Router>
        <div>
 
-           <div>
-           <Link to="/donate"><input type="submit" value="Donate"/></Link>
+            <div>
+            <Link to="/donate"><input type="submit" value="Donate"/></Link>
 
             <Link to="/getinvolved"><input type="submit" value="Get Involved"/></Link>
             </div>
