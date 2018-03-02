@@ -36,23 +36,24 @@ class NavBar extends React.Component{
       <Router>
        <div>
 
-            <div>
-            <Link to="/donate"><input type="submit" value="Donate"/></Link>
-
-            <Link to="/getinvolved"><input type="submit" value="Get Involved"/></Link>
-            </div>
 
             <div>
              <ul>
+              <Link to="/"><img src="../Pictures/Home_background.png" alt="logo"/></Link>
                <li><Link to="/">Home</Link></li>
                <li><Link to="/about">About</Link></li>
                <li><Link to="/report">Report</Link></li>
                <li><Link to="/education">Education</Link></li>
                <li><Link to="/contact">Contact</Link></li>
                <li><Link to="/signin">Sign In</Link></li>
+
+               <Link to="/donate"><input type="submit" value="Donate"/></Link>
+
+                <Link to="/getinvolved"><input type="submit" value="Get Involved"/></Link>
              </ul>
 
              <hr/>
+
 
              <Route exact path="/" component={Home}/>
              <Route path="/about" component={About}/>
@@ -63,6 +64,8 @@ class NavBar extends React.Component{
              <Route path="/donate" component={Donate}/>
              <Route path="/getinvolved" component={GetInvolved}/>
              </div>
+
+
 
        </div>
      </Router>
